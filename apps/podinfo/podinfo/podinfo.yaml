@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: podinfo
-        namespace: default
+        namespace: flux-system
   # Default values
   # https://github.com/stefanprodan/podinfo/blob/master/charts/podinfo/values.yaml
   values:
