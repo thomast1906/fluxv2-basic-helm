@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - ../../base
   - ../nginx/nginx.yaml
-  
+namespace: nginx
 patches:
   - path: ../../base/helmrelease-default.yaml
     target:
