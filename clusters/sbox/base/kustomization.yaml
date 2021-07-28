@@ -4,4 +4,4 @@ resources:
 - ../../../apps/flux-system/sbox/base
 - ../../../apps/podinfo/base/kustomize.yaml
 - ../../../apps/nginx/base/kustomize.yaml
-- ../../../apps/infrastructure/base
+- ../../../apps/redis/base/kustomize.yaml

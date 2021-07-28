@@ -1,0 +1,18 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: redis
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-config
+    namespace: flux-system
+  validation: none
+  path: ./apps/redis/${ENVIRONMENT}
+  postBuild:
+    substitute:
+      NAMESPACE: "redis"
+      CLUSTER_FULL_NAME: "${ENVIRONMENT}-${CLUSTER}"
