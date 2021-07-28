@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - ../../base
   - ../podinfo/podinfo.yaml
-namespace: podinfo
+  
 patches:
   - path: ../../base/helmrelease-default.yaml
     target:
