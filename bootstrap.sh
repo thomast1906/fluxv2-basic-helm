@@ -3,7 +3,7 @@ set -ex
 
 CLUSTER_ENV=00
 CLUSTER_FULLNAME=sbox
-FLUX_CONFIG_URL=https://raw.githubusercontent.com/thomast1906/fluxv2-basic-helm/main
+FLUX_CONFIG_URL=https://raw.githubusercontent.com/${GITHUB_USERNAME}/fluxv2-basic-helm/main
 
 # Install Flux
 kubectl apply -f ${FLUX_CONFIG_URL}/apps/flux-system/base/gotk-components.yaml
@@ -11,7 +11,7 @@ kubectl apply -f ${FLUX_CONFIG_URL}/apps/flux-system/base/gotk-components.yaml
 #Create Flux Sync CRDs
 kubectl apply -f ${FLUX_CONFIG_URL}/apps/flux-system/base/flux-config-gitrepo.yaml
 
-kubectl -n flux-system create secret generic flux-git-details --from-literal=username=GITHUB_USERNAME --from-literal=password=GITHUB_PAT_PASSWORD
+kubectl -n flux-system create secret generic flux-git-details --from-literal=username=${GITHUB_USERNAME} --from-literal=password=${GITHUB_PAT_PASSWORD}
 
 #Install kustomize
 curl -s "https://raw.githubusercontent.com/\
