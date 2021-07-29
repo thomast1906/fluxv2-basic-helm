@@ -1,6 +1,6 @@
 # fluxv2-basic-helm
 Basic repo to deploy an initial setup of fluxv2 with helmcharts - app examples were taken from 
-https://github.com/thomast1906/flux2-kustomize-helm-example 
+https://github.com/fluxcd/flux2-kustomize-helm-example  
 
 # Configuration
 
