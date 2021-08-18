@@ -1,3 +1,9 @@
+apiVersion: image.toolkit.fluxcd.io/v1alpha2
+kind: ImagePolicy
+metadata:
+  name: test
+  annotations:
+    hmcts.github.com/prod-automated: disabled
 spec:
   filterTags:
     pattern: '^8'
