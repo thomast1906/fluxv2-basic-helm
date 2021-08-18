@@ -5,4 +5,4 @@ resources:
   - ../../base
   - ../../base/image-automation-components.yaml
   # - ../../base/image-update-automation.yaml
-  - ../../automation
+  # - ../../automation
