@@ -4,6 +4,6 @@ metadata:
   name: credentials-sync  # name must match the stub-resource in az-identity.yaml
   namespace: flux-system
 spec:
-  clientID: db28bc8d-9438-4750-9544-e4c8427e7c3f
-  resourceID: /subscriptions/ea7d6031-5674-4635-9122-b7c31b5cdba3/resourceGroups/tamops-k8s-mi/providers/Microsoft.ManagedIdentity/userAssignedIdentities/tamops-aks-mi
+  clientID: 576e4332-bdad-4e86-b810-905a9fed9581
+  resourceID: /subscriptions/27f048cd-d37e-4655-8fbe-2e41b14d7327/resourceGroups/thomas-vnet-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identity1
   type: 0  # user-managed identity
