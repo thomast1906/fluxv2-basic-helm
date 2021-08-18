@@ -1,0 +1,9 @@
+spec:
+  filterTags:
+    pattern: '^8'
+    extract: ''
+  policy:
+    alphabetical:
+      order: asc
+  imageRepositoryRef:
+    name: test

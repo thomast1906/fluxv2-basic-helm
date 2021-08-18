@@ -4,6 +4,7 @@ namespace: flux-system
 resources:
   - registry-credential-sync/hmctspublic/kustomize.yaml
   - registry-credential-sync/hmctsprivate/kustomize.yaml
+  - ../../testimageauto/automation
 patches:
   - path: hmctspublic-image-repo.yaml
     target:
